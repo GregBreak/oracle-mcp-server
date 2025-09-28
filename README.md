@@ -20,6 +20,7 @@ A powerful Model Context Protocol (MCP) server that provides contextual database
 - [System Requirements](#system-requirements)
 - [Performance Considerations](#performance-considerations)
 - [Contributing](#contributing)
+- [Memvid](#memvid)
 - [License](#license)
 - [Support](#support)
 
