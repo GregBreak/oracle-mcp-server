@@ -5,7 +5,7 @@ description = "MCP server for Oracle database schema context retrieval"
 requires-python = ">=3.12"
 dependencies = [
     "black==26.3.1",
-    "mcp==1.23.0",
+    "mcp==1.27.0",
     "oracledb>=2.0.0",
     "pytest==9.0.3",
     "python-dotenv==1.2.2",
