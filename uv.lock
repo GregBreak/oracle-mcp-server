@@ -213,7 +213,7 @@ wheels = [
 
 [[package]]
 name = "mcp"
-version = "1.4.0"
+version = "1.9.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "anyio" },
@@ -221,13 +221,14 @@ dependencies = [
     { name = "httpx-sse" },
     { name = "pydantic" },
     { name = "pydantic-settings" },
+    { name = "python-multipart" },
     { name = "sse-starlette" },
     { name = "starlette" },
-    { name = "uvicorn" },
+    { name = "uvicorn", marker = "sys_platform != 'emscripten'" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/00/9d/ac1aaa3de8655a72fe07c0c2901ed35f0da2b3ffb2a1bfc4f46bbd7b6710/mcp-1.4.0.tar.gz", hash = "sha256:5b750b14ca178eeb7b2addbd94adb21785d7b4de5d5f3577ae193d787869e2dd", size = 155809, upload-time = "2025-03-13T13:49:49.077Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/e7/bc/54aec2c334698cc575ca3b3481eed627125fb66544152fa1af927b1a495c/mcp-1.9.1.tar.gz", hash = "sha256:19879cd6dde3d763297617242888c2f695a95dfa854386a6a68676a646ce75e4", size = 316247, upload-time = "2025-05-22T15:52:21.26Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/93/05/1cbc9f93900d4348f4e782811f251541d860e7d13c30cd68b402cd9edbd4/mcp-1.4.0-py3-none-any.whl", hash = "sha256:d2760e1ea7635b1e70da516698620a016cde214976416dd894f228600b08984c", size = 73036, upload-time = "2025-03-13T13:49:47.449Z" },
+    { url = "https://files.pythonhosted.org/packages/a6/c0/4ac795585a22a0a2d09cd2b1187b0252d2afcdebd01e10a68bbac4d34890/mcp-1.9.1-py3-none-any.whl", hash = "sha256:2900ded8ffafc3c8a7bfcfe8bc5204037e988e753ec398f371663e6a06ecd9a9", size = 130261, upload-time = "2025-05-22T15:52:19.702Z" },
 ]
 
 [[package]]
@@ -287,7 +288,7 @@ dev = [
 [package.metadata]
 requires-dist = [
     { name = "black", marker = "extra == 'dev'" },
-    { name = "mcp", specifier = ">=1.2.1" },
+    { name = "mcp", specifier = "==1.9.1" },
     { name = "mypy", marker = "extra == 'dev'" },
     { name = "oracledb", specifier = ">=2.0.0" },
     { name = "pytest", marker = "extra == 'dev'", specifier = ">=8.2.0" },
@@ -474,6 +475,15 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/bc/57/e84d88dfe0aec03b7a2d4327012c1627ab5f03652216c63d49846d7a6c58/python-dotenv-1.0.1.tar.gz", hash = "sha256:e324ee90a023d808f1959c46bcbc04446a10ced277783dc6ee09987c37ec10ca", size = 39115, upload-time = "2024-01-23T06:33:00.505Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/6a/3e/b68c118422ec867fa7ab88444e1274aa40681c606d59ac27de5a5588f082/python_dotenv-1.0.1-py3-none-any.whl", hash = "sha256:f7b63ef50f1b690dddf550d03497b66d609393b40b564ed0d674909a68ebf16a", size = 19863, upload-time = "2024-01-23T06:32:58.246Z" },
+]
+
+[[package]]
+name = "python-multipart"
+version = "0.0.28"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/82/54/a85eb421fbdd5007bc5af39d0f4ed9fa609e0fedbfdc2adcf0b34526870e/python_multipart-0.0.28.tar.gz", hash = "sha256:8550da197eac0f7ab748961fc9509b999fa2662ea25cef857f05249f6893c0f8", size = 45314, upload-time = "2026-05-10T11:05:16.596Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/f3/a2/43bbc5860b5034e2af4ef99a0e04d726ff329c43e192ef3abaa8d7ecfce5/python_multipart-0.0.28-py3-none-any.whl", hash = "sha256:10faac07eb966c3f48dc415f9dee46c04cb10d58d30a35677db8027c825ed9b6", size = 29438, upload-time = "2026-05-10T11:05:15.052Z" },
 ]
 
 [[package]]
