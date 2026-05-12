@@ -44,4 +44,7 @@ ENV PYTHONUNBUFFERED=1
 # Install package with UV (using --system flag)
 RUN uv pip install --system -e .
 
+RUN useradd -U -u 1000 appuser && chown -R 1000:1000 /app
+USER 1000
+
 CMD ["uv", "run", "main.py"]
